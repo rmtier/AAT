@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
-
 project(AAT_aligment_core)
 
-add_executable(AAT_core ./src/main.cpp)
+include_directories(include)
 
-install(TARGETS AAT_core DESTINATION bin)
+FILE(GLOB_RECURSE LibFiles "include/*.h")
+add_custom_target(headers SOURCES ${LibFiles})
+
+add_library(AAT_core SHARED ./src/aat.cpp)
+
+install(TARGETS AAT_core DESTINATION ./lib)
