@@ -2,6 +2,8 @@
 * author: Rami Mtier
 * date: 10.9.2016
 */
+#ifndef AAT_AAT
+#define AAT_AAT
 
 namespace AAT
 {
@@ -25,3 +27,5 @@ namespace AAT
 		void Init();
 	};
 }
+
+#endif
