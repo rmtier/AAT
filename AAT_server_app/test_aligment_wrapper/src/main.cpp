@@ -2,22 +2,11 @@
 * author: Rami Mtier
 * date: 10.9.2016
 */
-#include "aat.h"
 #include <iostream>
+#include "gtest/gtest.h"
 
-int main()
+int main(int ac, char* av[])
 {
-	std::cout << "\nTest aligment lib start..\n";
-	
-	try{
-		AAT::AatCore aat_core;
-	
-		aat_core.Run();
-	}catch(std::string exception_string)
-	{
-		std::cout <<  "\nException \n" << exception_string;
-	}
-	
-	std::cout << "\n..End\n";	
-	return 0;	
+  ::testing::InitGoogleTest(&ac, av);
+  return RUN_ALL_TESTS();
 }
