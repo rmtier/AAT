@@ -39,3 +39,9 @@ AAT_server_app/dyn_lib_aligment_core/CMakeLists.txt.save
 AAT_server_app/test_aligment_wrapper/_build/*
 AAT_server_app/test_aligment_wrapper/CMakeLists.txt.user
 AAT_server_app/test_aligment_wrapper/googletest/
+
+
+#####################################################
+# graphical wrapper
+####################################################
+AAT_server_app/build-dyn_lib_aligment_core-Desktop_Qt_5_7_0_GCC_64bit-Debug/*
